@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from technext.github.io/clyde/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Nov 2021 21:50:25 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <title>Dr. Manoj Shah</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../static/css/animate.css">
+
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="../static/css/flaticon.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon_io/favicon-32x32.png">
+
+    <style>
+        body{
+background: rgb(52,74,193);
+background: linear-gradient(90deg, rgba(52,74,193,1) 10%, rgba(253,207,43,1) 100%);
+        }
+        /* taking care of responsive layout */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            /* margin: 0.5rem; */
+            margin-top: 10em;
+            margin-bottom: 5em;
+        }
+.single-video {
+    width: 36rem;
+    flex-grow: 1;
+    margin: 1px;
+  
+}
+
+        /* taking care of the video aspect-ratio */
+        figure {
+            position: relative;
+            padding: 0 0 56.25% 0;
+        }
+
+        figure iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+              border: 2px black solid;
+        }
+                @media (max-width: 1000px) {
+                            .gallery {
+  
+            margin-top: 10em;
+            margin-bottom: 10em;
+
+        }
+
+                }
+    </style>
+    <!--  -->
+
+<script>
+    window.onscroll = function () {
+        scrollFunction()
+    }
+    function scrollFunction() {
+        var sn = document.getElementById("sticky_nav");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            // sn.style.top = "0"
+
+            sn.style.backgroundColor = "rgb(52, 74, 193)"
+            sn.style.padding = ".5em"
+            sn.style.opacity = ".96"
+        }
+        else {
+            // sn.style.top = "-2px"
+            sn.style.backgroundColor = "transparent"
+
+            sn.style.padding = ".5em"
+            sn.style.opacity = "1"
+        }
+    }
+
+
+    function openList(x) {
+        var cL = document.getElementsByClassName("content__list");
+        var i;
+        for (i = 0; i < cL.length; i++) {
+            var OcL = cL[i];
+            if (cL[i] != document.getElementById("thisList_" + x)) {
+                OcL.classList.remove("show_list")
+            }
+        }
+        document.getElementById("thisList_" + x).classList.toggle("show_list")
+    }
+
+
+    function openMenu() {
+        document.getElementById("thisMenu").classList.toggle("show_menu");
+        // document.getElementById("btnMenu").getElementsByTagName("i")[0].classList.toggle("hidden");
+        document.getElementById("btnMenu").getElementsByTagName("i")[1].classList.toggle("visible")
+    }
+</script>
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+   <!-- navbar -->
+
+{% include '/layout/base_navbar.html' %}
+
+<!-- end of navbar -->
+
+
+
+    <div class="container gallery">
+        <div class="single-video">
+            <figure>
+            <iframe  src="https://www.youtube.com/embed/6TJzOdvaCTA" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen loading="lazy"></iframe>
+            </figure>
+        </div>
+        <div class="single-video">
+            <figure>
+<iframe  src="https://www.youtube.com/embed/qyFpAaSZFB0" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen loading="lazy"></iframe>
+            </figure>
+        </div>
+        <div class="single-video">
+            <figure>
+<iframe  src="https://www.youtube.com/embed/mVAdrv708gU" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen loading="lazy"></iframe>
+            </figure>
+        </div>
+        <div class="single-video">
+            <figure>
+    <iframe src="https://www.youtube.com/embed/ImVaF84ugX0" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen loading="lazy"></iframe>
+            </figure>
+        </div>
+        <div class="single-video">
+            <figure>
+<iframe  src="https://www.youtube.com/embed/vYxiHYChaj4" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen loading="lazy"></iframe>
+            </figure>
+        </div>
+    </div>
+
+
+
+ <!-- footer -->
+
+ {% include '/layout/base_footer.html' %}
+
+ <!-- end of footer -->
+
+
+
+
+  <!-- loader -->
+  {% include '/layout/base_loader.html' %}
+  <!-- end of loader -->
+
+  
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState === "complete") {
+                $("#panel_left").addClass("panel_left");
+                $("#panel_right").addClass("panel_right");
+                $("#loader").addClass("loaded-circle");
+                $("#loader-img").addClass("loaded-img");
+                $("#preloader").addClass("loaded-img");
+            }
+        }
+    </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.easing.1.3.js"></script>
+    <script src="../static/js/jquery.waypoints.min.js"></script>
+    <script src="../static/js/jquery.stellar.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/jquery.magnific-popup.min.js"></script>
+    <script src="../static/js/jquery.animateNumber.min.js"></script>
+    <script src="../static/js/scrollax.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+    <script src="../static/js/google-map.js"></script>
+
+    <script src="../static/js/main.js"></script>
+
+</body>
+
+<!-- Mirrored from technext.github.io/clyde/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Nov 2021 21:50:36 GMT -->
+
+</html>
