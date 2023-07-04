@@ -135,7 +135,7 @@
 		@media only screen and (max-width: 767px) {
 			.about-me {
 				flex-direction: column-reverse;
-				margin-top: 2em;
+				margin-top: -3em;
 			}
 
 			.about-me img {
@@ -155,13 +155,24 @@
 			
 
 		}
+		@media screen and (max-width: 915px) and (min-width: 768px) {
+.about-me{
+	margin-top: -31em !important; 
+}
+		}
+		@media screen and (max-width: 768px) and (min-width: 767px) {
+.about-me{
+	margin-top: -25em !important; 
+}
+		}
+
 
 
 
 		@media only screen and (max-width: 400px) {
 			.about-me {
-				margin-bottom: 45em;
-				margin-top: -5em;
+				margin-bottom: 8em;
+				margin-top: -4em;
 			}
 
 		}
@@ -273,15 +284,38 @@
 		@media (max-width: 991px) {
 			.slider-button {
 
-				bottom: 3em;
+				bottom: 8em;
 				margin: auto;
 				text-align: center;
 
+			}
+			.jj{
+				background-size: 100% 55% !important; 
 			}
 		}
 
 		.gallery-image:hover {
 			transform: none;
+		}
+		@media screen and (max-width: 360px) and (min-width: 359px) {
+.about-me{
+	margin-bottom: 45em !important;
+}
+		}
+		@media screen and (max-width: 409px) and (min-width: 390px) {
+.about-me{
+	margin-top: -11em !important;
+}
+		}
+		@media screen and (max-width: 415px) and (min-width: 410px) {
+.about-me{
+	margin-top: -15em !important;
+}
+		}
+		@media (max-width: 300px){
+			.about-me{
+	margin-top: -2em !important;
+}
 		}
 	</style>
 
@@ -305,6 +339,9 @@
 		
 
 	}
+	.jj{
+				background-size: 100% 75% !important; 
+			}
 	}
 </style>
 
@@ -319,8 +356,8 @@
 				<div class=" px-md-0">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
-						<div class="one-third order-md-last img"
-							style="background-image:url(../static/Sliders/drmanojslider3.png);  background-repeat: no-repeat; background-size: 100% 75%; height: 100%; ">
+						<div class="one-third order-md-last img jj"
+							style="background-image:url(../static/Sliders/drmanojslider3.png);  background-repeat: no-repeat;  height: 100%; ">
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
