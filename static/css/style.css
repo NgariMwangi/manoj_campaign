@@ -10241,7 +10241,7 @@ h5,
 }
 .owl-carousel.home-slider {
 	position: relative;
-	height: 80vh;
+	/* height: 80vh; */
 	z-index: 0;
 }
 .owl-carousel.home-slider .slider-item {
@@ -12428,9 +12428,9 @@ textarea.form-control {
 	.cont-flex {
 		padding: 0;
 	}
-	.blue-cont {
+	/* .blue-cont {
 		margin-top: -43em;
-	}
+	} */
 	.reduce {
 		margin-top: -8em;
 	}
