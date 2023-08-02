@@ -250,6 +250,9 @@
 
 
         }
+        .btnList {
+    color: black;
+}
     </style>
     <!--  -->
 
@@ -260,12 +263,14 @@
     }
     function scrollFunction() {
         var sn = document.getElementById("sticky_nav");
+        var e = document.getElementsByClassName("btnList");
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             // sn.style.top = "0"
 
             sn.style.backgroundColor = "rgb(52, 74, 193)"
             sn.style.padding = ".5em"
             sn.style.opacity = ".96"
+            e.style.color= "white"
         }
         else {
             // sn.style.top = "-2px"

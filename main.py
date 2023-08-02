@@ -149,6 +149,9 @@ def environment():
 @app.route('/hunger')
 def hunger():
     return render_template("hunger.html")
+@app.route('/brochures')
+def brochures():
+    return render_template("brochures.html")
 
 if __name__ == "__main__":
     app.run()
