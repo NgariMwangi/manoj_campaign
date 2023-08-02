@@ -4,7 +4,10 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
+ @media (max-width: 991px) {
+.lion-image-header{
+	background-size: 100% 86% !important;
+}}
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@300;500;600&display=swap");
 :root {
 	--blue: #007bff;
@@ -10577,21 +10580,21 @@ h5,
 @media (max-width: 625px) {
 .hero-wrap.hero-wrap-2 {
 
-	max-height: 340px;
+	max-height: 223px;
 }
 }
 
 @media (max-width: 550px) {
 .hero-wrap.hero-wrap-2 {
 
-	max-height: 310px;
+	max-height: 223px;
 }
 }
 
 @media (max-width: 480px) {
 .hero-wrap.hero-wrap-2 {
 
-	max-height: 310px;
+	max-height: 223px;
 }
 }
 
