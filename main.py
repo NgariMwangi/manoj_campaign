@@ -152,6 +152,18 @@ def hunger():
 @app.route('/brochures')
 def brochures():
     return render_template("brochures.html")
+@app.route('/philanthropy')
+def phila():
+    return render_template("philanthropy.html")
+@app.route('/lcif')
+def lcif():
+    return render_template("lcif.html")
+@app.route('/ntsa')
+def ntsa():
+    return render_template("ntsa.html")
+@app.route('/lsfeh')
+def lsfeh():
+    return render_template("lsfeh.html")
 
 if __name__ == "__main__":
     app.run()

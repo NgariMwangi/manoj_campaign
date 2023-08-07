@@ -140,27 +140,27 @@
 
             <div class="row block-9">
                 <div class="col-md-8">
-                    <form action="https://formsubmit.co/oneinamillion@kingswaytyres.com" class="bg-light p-4 p-md-5 contact-form" method="post">
+                    <form action="https://formsubmit.co/oneinamillion@kingswaytyres.com" class="bg-light p-4 p-md-5 contact-form" method="post" id="myform">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name">
+                                    <input type="text" class="form-control" placeholder="Your Name" name="name">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Email">
+                                    <input type="text" class="form-control" placeholder="Your Email" name="email">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject">
+                                    <input type="text" class="form-control" placeholder="Subject" name="subject">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <textarea name="" id="" cols="30" rows="7" class="form-control"
-                                        placeholder="Message"></textarea>
+                                        placeholder="Message" name="message"></textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -214,7 +214,23 @@
      <!-- loader -->
     {% include '/layout/base_loader.html' %}
     <!-- end of loader -->
-
+    <script>
+        function sendEmail() {
+          var form = document.getElementById("myform");
+          var data = new FormData(form);
+          
+          var subject = data.get("subject");
+          var body = "Name: " + data.get("name") + "\n"
+                     + "Email: " + data.get("email") + "\n"
+                     + "Message: " + data.get("message");
+          
+          var mailtoLink = "mailto:recipient@exampl"
+                         + "?subject=" + encodeURIComponent(subject)
+                         + "&body=" + encodeURIComponent(body);
+          
+          window.open(mailtoLink);
+        }
+        </script>
     
     <script>
         document.onreadystatechange = function () {
