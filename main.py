@@ -164,6 +164,10 @@ def ntsa():
 @app.route('/lsfeh')
 def lsfeh():
     return render_template("lsfeh.html")
+    return render_template("ntsa.html")
+@app.route('/professional')
+def professional():
+    return render_template("professional.html")
 
 if __name__ == "__main__":
     app.run()
