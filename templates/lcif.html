@@ -29,85 +29,78 @@
 
 
     <style>
-
-
-
-
-
-
         @media (max-width: 375px) {
-            .cont-flex{
+            .cont-flex {
                 padding-left: 1em;
             }
-            
+
         }
+
         .col-md-12 {
             padding-left: 0;
         }
+
         @media (max-width: 375px) {
-            .testimony-wrap{
+            .testimony-wrap {
                 margin-bottom: 6em;
             }
         }
-
-
-
     </style>
 
     <!--  -->
 
-<script>
-    window.onscroll = function () {
-        scrollFunction()
-    }
-    function scrollFunction() {
-        var sn = document.getElementById("sticky_nav");
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            // sn.style.top = "0"
-
-            sn.style.backgroundColor = "rgb(52, 74, 193)"
-            sn.style.padding = ".5em"
-            sn.style.opacity = ".96"
+    <script>
+        window.onscroll = function () {
+            scrollFunction()
         }
-        else {
-            // sn.style.top = "-2px"
-            sn.style.backgroundColor = "transparent"
+        function scrollFunction() {
+            var sn = document.getElementById("sticky_nav");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                // sn.style.top = "0"
 
-            sn.style.padding = ".5em"
-            sn.style.opacity = "1"
-        }
-    }
+                sn.style.backgroundColor = "rgb(52, 74, 193)"
+                sn.style.padding = ".5em"
+                sn.style.opacity = ".96"
+            }
+            else {
+                // sn.style.top = "-2px"
+                sn.style.backgroundColor = "transparent"
 
-
-    function openList(x) {
-        var cL = document.getElementsByClassName("content__list");
-        var i;
-        for (i = 0; i < cL.length; i++) {
-            var OcL = cL[i];
-            if (cL[i] != document.getElementById("thisList_" + x)) {
-                OcL.classList.remove("show_list")
+                sn.style.padding = ".5em"
+                sn.style.opacity = "1"
             }
         }
-        document.getElementById("thisList_" + x).classList.toggle("show_list")
-    }
 
 
-    function openMenu() {
-        document.getElementById("thisMenu").classList.toggle("show_menu");
-        // document.getElementById("btnMenu").getElementsByTagName("i")[0].classList.toggle("hidden");
-        document.getElementById("btnMenu").getElementsByTagName("i")[1].classList.toggle("visible")
-    }
-</script>
+        function openList(x) {
+            var cL = document.getElementsByClassName("content__list");
+            var i;
+            for (i = 0; i < cL.length; i++) {
+                var OcL = cL[i];
+                if (cL[i] != document.getElementById("thisList_" + x)) {
+                    OcL.classList.remove("show_list")
+                }
+            }
+            document.getElementById("thisList_" + x).classList.toggle("show_list")
+        }
+
+
+        function openMenu() {
+            document.getElementById("thisMenu").classList.toggle("show_menu");
+            // document.getElementById("btnMenu").getElementsByTagName("i")[0].classList.toggle("hidden");
+            document.getElementById("btnMenu").getElementsByTagName("i")[1].classList.toggle("visible")
+        }
+    </script>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-<!-- navbar -->
+    <!-- navbar -->
 
-{% include '/layout/base_navbar.html' %}
+    {% include '/layout/base_navbar.html' %}
 
-<!-- end of navbar -->
+    <!-- end of navbar -->
 
 
 
@@ -122,8 +115,8 @@
     <div class="container cont-flex ftco-animate">
 
         <div class="lions-text-div" style="flex:50%;">
-            <h1 class="ftco-animate"> <img style="max-width: 4em;" src="../static/img/Affliations Logos/L.S.F.E.H.png" alt=""
-                    srcset=""> <span style="color: blue;">LCIF</span>
+            <h1 class="ftco-animate"> <img style="max-width: 4em;" src="../static/img/Affliations Logos/L.S.F.E.H.png"
+                    alt="" srcset=""> <span style="color: blue;">LCIF</span>
             </h1>
             <img id="background-snowflake" src="../static/Symbol.png" alt="" srcset="">
             <!-- <h2>Hello! i'm Ma</h2> -->
@@ -162,15 +155,31 @@
             </p>
             <p class="ftco-animate">
                 One of his triumphs has been building partnerships with the Foundation. He has again been in
-                the forefront of all these partnerships including the Carter Foundation to fight and eradicate
-                river blindness in Africa, Special Olympics as he helped create partnerships in more than 8
-                African countries, Johnson and Johnson for the Sight for Kids program, Essilor to help with the
-                Vision for Kids program, Little Hearts U.K to help babies with congenital heart problems, Smile
-                Train to help children with cleft lip correction, Golisano Foundation to help create a Health
-                Inclusion program for their athletes, Bill &amp; Melinda Gates Foundation for a sanitization
-                program, Aruna Abhey Oswal Foundation to help develop a Cancer Center for children, Breast
-                Cancer Unit for women and an ENT Center for children in Kenya and many other such
-                foundations. He dreams big with no limitations. The fortunate Manoj truly owes himself
+                the forefront of all these partnerships including:
+            </p>
+            <ul>
+                <li>The Carter Foundation to fight and eradicate
+                    river blindness in Africa.</li>
+                <li>Special Olympics as he helped create partnerships in more than 8
+                    African countries.</li>
+                <li>Johnson and Johnson for the Sight for Kids program.</li>
+                <li> Essilor to help with the
+                    Vision for Kids program.</li>
+                <li>Little Hearts U.K to help babies with congenital heart problems.</li>
+                <li>Smile
+                    Train to help children with cleft lip correction.</li>
+                <li>Golisano Foundation to help create a Health
+                    Inclusion program for their athletes.</li>
+                <li> Bill &amp; Melinda Gates Foundation for a sanitization
+                    program.</li>
+                <li>Aruna Abhey Oswal Foundation to help develop a Cancer Center for children.</li>
+                <li> Breast
+                    Cancer Unit for women. </li>
+                <li>ENT Center for children in Kenya and many other such
+                    foundations.</li>
+            </ul>
+            <p class="ftco-animate">
+                He dreams big with no limitations. The fortunate Manoj truly owes himself
                 massive success.
             </p>
             <p class="ftco-animate">
@@ -190,7 +199,7 @@
                 GOODWILL AWARD”. He has also been conferred with an Honorary Doctorate in
                 Humanities.
             </p> -->
-<!-- 
+            <!-- 
             <p class="ftco-animate">
                 In addition to his Lion activities, Director Shah is active in numerous professional and
                 community organizations. He is currently the Chairman of the M.P. Shah Hospital,
@@ -207,7 +216,7 @@
 
 
         </div>
- 
+
     </div>
 
 
@@ -327,19 +336,19 @@
 
 
 
-   <!-- footer -->
+    <!-- footer -->
 
-{% include '/layout/base_footer.html' %}
+    {% include '/layout/base_footer.html' %}
 
-<!-- end of footer -->
+    <!-- end of footer -->
 
 
 
-  <!-- loader -->
-  {% include '/layout/base_loader.html' %}
-  <!-- end of loader -->
+    <!-- loader -->
+    {% include '/layout/base_loader.html' %}
+    <!-- end of loader -->
 
-  
+
     <script>
         document.onreadystatechange = function () {
             if (document.readyState === "complete") {
