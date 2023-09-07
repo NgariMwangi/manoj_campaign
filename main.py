@@ -168,6 +168,9 @@ def lsfeh():
 @app.route('/professional')
 def professional():
     return render_template("professional.html")
+@app.route('/leos')
+def leos():
+    return render_template("leos.html")
 
 if __name__ == "__main__":
     app.run()
